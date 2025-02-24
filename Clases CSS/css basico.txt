@@ -1,0 +1,144 @@
+Curso de HTML y CSS:
+Video de youtube: https://www.youtube.com/watch?v=ELSm-G201Ls
+
+Breve intro a HTML y CSS: 
+HTML significa HyperText Markup Language/lenguaje de marcado de hipertexto
+Lengaje de marcado = Los lenguajes de marcado agarran texto y lo presneta de forma distinta, es decir necesitan de un programa que interprete
+lo que quieren decir y mostrarlo.  
+Es un lenguaje interpretado.
+Que hace html? Para que sirve? Para que lo solemos usar?
+Con html lo que hacemos litralmente es armar la estrucutra de la pagina web, cualquier cosa que nosotros pongamos(imagenes, fotos, textos, videos)
+Son elementos llamados tags o etiquetas
+Los atributos son las caracteristicas de los elementos
+<b> Indica que todo el codigo dsp de esa <b> va en negrita
+para cerrar esa etiqueta va una / y la letra por ej </b>
+<h> Indica un encabezado especial, signica header1 y se ciera </h>
+<p> Define un parrafo, </p> cierra esa etiqueta
+
+CSS:
+Lo que hace CSS es un standard que todos los navegadores tiene que cumplir, para que nosotros con CSS le digamos las propiedades de ese elemento.
+CSS signica Cascading Style Sheets/Hojas de Estilo en Cascada.
+Se encarga de definir como se tienen que mostrar los elementos en una pagina web.
+El selector hace referencia al elemento HTML al que le queres modificar sus propiedades
+Y el bloque de propiedades, que se abre con llaves, son todos los elementos que queremos modificar y el valor que queremos que tengan,
+ estas declaraciones, se separan con un ;.
+Entonces HTML se centra en crear la estrucutra y elementos de una pagina web y CSS agarra los elementos creados con HTML y le modifica 
+todas sus propiedades.
+
+La estrucutra de reglas de estilo de CSS consta de un selector y de un bloque de declaraciones. 
+
+Hay tres formas de enlazar css con html:
+Estilos en linea:
+Le da el estilo en una sola linea de codigo
+<p style="color:red"> La etiqueta style es para acceder a las propiedades de css y modificarlas
+	Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, dolor ut tempora quisquam dolores ipsum! 
+	Adipisci a, explicabo hic doloremque voluptates velit quam! Accusantium odit non fuga repellendus a voluptates.
+</p>
+Una contra de este estilo es que esta todo el codigo junto
+
+La otra forma es usando style, no como atributo, sino como etiqueta:
+<style>
+		p { -> Esto le dice que todos las etiquetas <p> van a tener estas configuraciones
+			color:red; -> el ; es para modificar mas de una caracteristica
+			font-size:18px 
+        }
+		h1 {
+            color:blue
+        }
+</style>
+No se recomienda usar esta forma tampoco porque suelen ser muchas las caracteristicas que se le modifican
+
+La tercer forma y la mas usada es la etiqueta link: 
+Esta etiqueta lo que hace es justamente linkear una hoja de estilos (css), se escribe en el head asi:
+<link rel="stylesheet" href="style.css"> -> 
+El rel="" (viene de relationship) le dice la relacion de el archivo vinculado con el archivo html
+El href="" le dice de que archivo sacar las propiedades para los elementos
+
+Ya en el archivo en el que vamos a modificar las propiedades hay que poner un selector, es decir, seleccionar que propiedades vamos a modificar
+Despues se abren las llaves {}, que indican que estamos abriendo un bloque de declaraciones, se escribren las propiedades que vamos a modificar y el valor que le vamos a dar
+
+Esta forma de seleccionar elementos se llama seleccion por elementos, este metodo busca el nombre de el elememto html y lo modifica, en codigo:
+p {
+    color:red
+}
+
+Esta forma de seleccionar elementos se llama seleccion por clase, modifica un elemento especifico, hay que asignarle una clase y a esa clase 
+	se le modifican las propiedades, se escribre .nombre de la clase, por ejemplo: 
+
+index.html:
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enlazando CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Ingredientes</h1>
+    <ul>
+        <li class="faltante">Harina</li>
+        <li>Aceite</li>
+        <li>Leche</li>
+        <li>Sal</li>
+    </ul>
+</body>
+</html>
+
+style.css
+.faltante {
+    color:red
+}
+
+La otra forma es por selector id, este se le puede dar un solo elemento en toda la pagina
+Con este metodo se usa la almohadilla #. Si bien se le puede dar a dos elementos distintos el mismo id, no se recomienda, 
+	porque le dice al navegador que es un identificador unico, es decir, va a haber un solo elemento con ese id. Por ejemplo:
+
+index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enlazando CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Ingredientes</h1>
+    <ul>
+        <li class="faltante">Harina</li>
+        <li>Aceite</li>
+        <li>Leche</li>
+        <li>Sal</li>
+        <li id="ingrediente_secreto">Levadura</li>
+    </ul>
+</body>
+</html>
+
+style.css
+#ingrediente_secreto {
+    color:blue
+}
+
+En resumen, mientras que la clase se utiliza para definir varios elementos de un mismo tipo, no se puede dar el mismo id a mas de un elemento, 
+	porque esa es la forma de decirle al navegador que ese elememto va a tener un identificador unico 
+
+PROPIEDADES DE FUENTE Y TEXTO:
+El ; separa propiedades
+color -> Cambia el color de el texto
+font-family -> Son los tipos de tipografias, se puede escribir sin comillas simples (Se escriben con el signo de pregunta que esta a la derecha de el 0),
+	siempre y cuando sean una sola palabra o si son dos separadas por un -, se pueden escribir mas de una tipografia por si la principal no carga, 
+		separadas por una coma
+font-size -> Tamaño de la letra, se escribe un numero y despues px, por defecto, son 16px
+font-weight -> Defini el grosor de la tipografia, poniendo "bold" reemplaza la etiqueta b. Pero si queremos resaltar a nivel semantico una palabra, 
+	se hace con la etiqueta <strong> en html dado que el navegador le da mas importancia a la etiqueta <strong> que a la etiqueta <b>
+font-style -> Cambia el estilo de la tipografia, por defecto esta en normal  
+text-align -> Alinea texto dentro de su contenedor, por defecto esta en left
+text-decoration -> Lo que hace es decorar el texto, se puede poner mas de uno. La propiedad por defecto es none
+line-heigt (propiedad de linea) -> Define el espaciado entre linea y linea de texto, por defecto esta en normal
+letter-spacing -> Define el espaciado entre letras, por defecto esta en 1px
+text-transform -> Transforma el texto en mayusculas o minusculas, el valor por defecto es none
+	uppercase -> lo convierte en mayuscula
+	lowercase -> lo convierte en minuscula
+	capitalize -> convierte cada primer letra de cada palabra en mayuscula
+	full-width -> le da a el texto en el ancho completo de la pantalla
+ 
+Este apunte es hasta la hora 2.44
+
+HORA 2.50   

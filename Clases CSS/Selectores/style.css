@@ -1,0 +1,11 @@
+li {  /* Selector por elemento */
+    color:green
+}
+
+.faltante { /* Selector por clase */
+    color:red
+}
+
+#ingrediente_secreto { /* Selector por id */
+    color:blue
+}

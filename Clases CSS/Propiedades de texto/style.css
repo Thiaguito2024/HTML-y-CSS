@@ -1,0 +1,14 @@
+p {
+    color:red;
+    font-family: sans-serif; /* Tipografias */
+    font-size: 16px; /* Tamaño de la letra, por defecto, son 16px */
+    font-weight:bold; /* Define el grosor de la tipografia, poniendo "bold" reemplaza la etiqueta b */
+    font-style: italic; /* Cambia el estilo de la tipografia, por defecto esta en normal */
+    text-align: justify; /* Alinea texto dentro de su contenedor, por defecto esta en left */
+    line-height: normal; /* Define el espaciado entre linea y linea, por defecto esta en normal */
+    letter-spacing: 1px; /* Define el espaciado entre letras, por defecto esta en 1px */
+}
+
+h1 {
+    text-align: center;
+}

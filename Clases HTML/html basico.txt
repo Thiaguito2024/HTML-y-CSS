@@ -1,0 +1,91 @@
+Curso de HTML y CSS:
+Video de youtube: https://www.youtube.com/watch?v=ELSm-G201Ls
+
+Breve intro a HTML y CSS: 
+HTML significa HyperText Markup Language/lenguaje de marcado de hipertexto
+Lengaje de marcado = Los lenguajes de marcado agarran texto y lo presneta de forma distinta, es decir necesitan de un programa que interprete
+lo que quieren decir y mostrarlo.  
+Es un lenguaje interpretado.
+Que hace html? Para que sirve? Para que lo solemos usar?
+Con html lo que hacemos litralmente es armar la estrucutra de la pagina web, cualquier cosa que nosotros pongamos(imagenes, fotos, textos, videos)
+Son elementos llamados tags o etiquetas
+Los atributos son las caracteristicas de los elementos
+<b> Indica que todo el codigo dsp de esa <b> va en negrita
+para cerrar esa etiqueta va una / y la letra por ej </b>
+<h> Indica un encabezado especial, signica header1 y se ciera </h>
+<p> Define un parrafo, </p> cierra esa etiqueta
+
+CSS:
+Lo que hace CSS es un standard que todos los navegadores tiene que cumplir, para que nosotros con CSS le digamos las propiedades de ese elemento.
+CSS signica Cascading Style Sheets/Hojas de Estilo en Cascada.
+Se encarga de definir como se tienen que mostrar los elementos en una pagina web.
+El selector hace referencia al elemento HTML al que le queres modificar sus propiedades
+Y el bloque de propiedades, que se abre con llaves, son todos los elementos que queremos modificar y el valor que queremos que tengan,
+ estas declaraciones, se separan con un ;.
+Entonces HTML se centra en crear la estrucutra y elementos de una pagina web y CSS agarra los elementos creados con HTML y le modifica 
+todas sus propiedades.
+
+La estrucutra de reglas de estilo de CSS consta de un selector y de un bloque de declaraciones. 
+
+HTML BASICO:
+PARRAFOS Y ENCABEZADOS
+<!DOCTYPE html> -> Indica la version de HTML al navegador
+<html>
+    <head>
+    <title>TITULO DE LA PAGINA</title>
+    </head>
+    <body> -> ACA SE ESCRIBE TODO EL CODIGO DE LA PAGINA WEB
+        <h1>TITULO</h1> -> TITULO
+        <h2>SUBTITULO 1</h2> -> SUBTITULO
+        <h3>SUBTITULO 2</h3> -> SUBTITULO DE SUBTITULO
+        <h4>SUBTITULO 3</h4> -> SUBTITULO DE SUBTITULO DE SUBTITULO
+        <h5>SUBTITULO 4</h5> -> SUBTITULO DE SUBTITULO DE SUBTITULO DE SUBTITULO
+        <h6>SUBTITULO 5</h6> -> SUBTITULO DE SUBTITULO DE SUBTITULO DE SUBTITULO DE SUBTITULO 
+        <p> -> Inicializa parrafos
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error neque dolore fuga magnam quis non doloremque, tempore nobis exercitationem voluptatibus. Laboriosam, eaque illo provident exercitationem possimus debitis consequatur. Quas, reprehenderit!
+        </p>
+    </body>
+</html>
+<a href=""></a> -> se usa para poner enlaces, si es un enlace a un archivo externo a nuestro dispositivo se empieza siempre con https://
+		sino, se escribe el nombre del archivo, por defecto tiene el atributo target="_self", que abre el link en la misma pagina.
+<a href=""></a target="_blank"> -> abre el link en otra pagina.
+ol -> orderer list/listas ordenadas
+ul -> urderer list/listas desordenadas
+li -> list item/item de la lista
+<img src="nombre de la imagen"> -> este atributo se usa para cargar imagenes al sitio web. 
+	Esta es una self closing tag/etiqueta de cierre automatico, es decir, no necesita que el programador la cierre manualmente.
+alt=""-> nos permite escribir texto en caso de que la etiqueta no cargue.
+
+Diferencias entre etiquetas de bloque y etiquetas de linea:
+Ancho: Las etiquetas de bloque ocupan todo el ancho disponible; las etiquetas en línea solo ocupan el espacio necesario para su contenido.
+Posicionamiento: Las etiquetas de bloque comienzan en una nueva línea; las etiquetas en línea no.
+Aplicaciones: Los bloques son ideales para la estructura general de la página, mientras que los elementos en línea se usan para pequeñas partes
+	de contenido dentro de bloques. 
+
+Hay dos tipos de rutas: las absolutas y las relativas:
+Las rutas absolutas: Son esas rutas donde guardamos algo y es absoluto desde donde se lo mire, es un recurso que esta solamente ahi, por ejemplo
+	instagram, desde cualquier dispositivo que pongamos https://instagram.com vamos a acceder a la pagina web de instagram.
+Las rutas relativas: No se pueden acceder todas desde el mismo lado, por ejemplo si hay una img q esta en otra carpeta, y nosotros la queremos
+	usar, hay que poner la ruta  para que el navegador entre a esa carpeta y muestre ese archivo.
+	la forma de ir una carpeta hacia arriba o adelante es: /carpeta donde esta el archivo/nombre del archivo
+	y la forma de ir una carpeta hacia abajo o atras es poniendo ../y el nombre del archivo, asi se retrocede una carpeta, para retroceder
+	dos carpetas es ../../y el nombre del archivo al cual quiero ir. Es decir, se pone ../ la cantidad de carpeta atras que queramos ir.
+
+Formularios
+<form>
+	<input type="text"> -> para pedir textos
+	<input type="mail"> -> para pedir y validar que sea un mail
+	<input type="password"> -> pide contraseña
+	<input type="color"> -> le  deja al usuario elegir un color
+	<input type="checkbox"> -> es una casilla para que el usuario ponga q esta de acuerdo, por ej la casilla de los terminos y condiciones
+	<input type="file"> -> le pide al usuario subir un archivo
+	<input type="radio"> -> 
+	<input type="submit"> -> es el boton enviar 
+</form>
+La propiedad "value" es el texto que aparece en el input submit, en vez de enviar, pero en otros inputs, es el texto q tendria adentro ese input.
+La propiedad "name" lo que hace es decirle al servidor que datos le estamos enviando
+La propiedad "placeholder" es un pequeño texto que se usa para describir que tipo de dato va en ese campo, desaparece cuanddo el usuario arranca a escribir, 
+	si borra todo lo que escribio vuelve a aparecer
+La propiedad required hace que se tenga que completar si o si y con un tipo de dato especifico
+
+Apunte hasta la hora 1.56, de ahi en adelante es css basico

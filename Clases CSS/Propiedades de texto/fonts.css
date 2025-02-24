@@ -1,4 +1,60 @@
 @font-face {
-    font-family: "Fuente-personalizada";
-    src: url();
+    font-family: "monserrat";
+    src: url("fonts-Monserrat/Montserrat-ExtraLight.ttf") format("truetype"); /* ttf significa truetype*/
+    font-weight: 100;
+}    
+
+@font-face {
+    font-family: "monserrat";
+    src: url("fonts-Monserrat/Montserrat-Regular.ttf") format("truetype"); /* ttf significa truetype*/
+    font-weight: 400;
+}    
+
+@font-face {
+    font-family: "monserrat";
+    src: url("fonts-Monserrat/Montserrat-Bold.ttf") format("truetype"); /* ttf significa truetype*/
+    font-weight: 500;
+}  
+
+@font-face {
+    font-family: "monserrat";
+    src: url("fonts-Monserrat/Montserrat-ExtraBold.ttf") format("truetype"); /* ttf significa truetype*/
+    font-weight: 700;
+}    
+
+@font-face {
+    font-family: "monserrat";
+    src: url("fonts-Monserrat/Montserrat-Black.ttf") format("truetype"); /* ttf significa truetype*/
+    font-weight: 900;
+}    
+
+/* SEGUNDA TIPOGRAFIA */
+@font-face {
+    font-family: "robotocondensed";
+    src: url("fonts-RobotoCondensed/RobotoCondensed-ExtraLight.ttf") format("truetype"); /* ttf significa truetype*/
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "robotocondensed";
+    src: url("fonts-RobotoCondensed/RobotoCondensed-Regular.ttf") format("truetype"); /* ttf significa truetype*/
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "robotocondensed";
+    src: url("fonts-RobotoCondensed/RobotoCondensed-Bold.ttf") format("truetype"); /* ttf significa truetype*/
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "robotocondensed";
+    src: url("fonts-RobotoCondensed/RobotoCondensed-ExtraBold.ttf") format("truetype"); /* ttf significa truetype*/
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "robotocondensed";
+    src: url("fonts-RobotoCondensed/RobotoCondensed-Black.ttf") format("truetype"); /* ttf significa truetype*/
+    font-weight: 900;
 }

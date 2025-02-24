@@ -138,7 +138,34 @@ text-transform -> Transforma el texto en mayusculas o minusculas, el valor por d
 	lowercase -> lo convierte en minuscula
 	capitalize -> convierte cada primer letra de cada palabra en mayuscula
 	full-width -> le da a el texto en el ancho completo de la pantalla
- 
-Este apunte es hasta la hora 2.44
 
-HORA 2.50   
+Para agregar una tipografia externa, tenemos q descarga esa tipografia de google, descomprimirla, y buscar la carpeta static en los archivos o carpetas q 
+	haya instalado y en un archivo.css poner:
+@font-face {
+    font-family: "Nombre de la tipografia entre comillas dobles";
+    src: url("Carpeta en la q estan los diferentes tipos de grosores") format("truetype"); y darle el formato truetype para q el navergador la cargue mas rapido
+    font-weight: depende de si es extralight(100), regular(400), bold(500), extrabold(700) o black(900);
+} 
+
+BOX MODEL O MODELO DE CAJA:
+Describe como se diseñan o deberian poner los elememtos html en una pagina web.
+Cada elemento html en una pagina web es una caja, este modelo de caja
+define como esas cajas se dimensionan, cambian sus tamaños y propiedades etc y ademas como interactuan entre si
+
+Este modelo incluye 4 propiedades:
+1. Content o contenido;
+	Es el nucleo del box model, es el area donde se muestra el texto, imagenes o cualquier otro
+	contenido de el elemento
+2. Padding o relleno;
+	Es el espacio entre el contenido y el borde de el elememto, este espacio
+	aumenta el area alrededor de el contenido dentro de el elemento, pero bajo el borde
+3. Border o borde:
+	Es una linea q rodea tanto al contenido como al padding, se puede controlar
+	tanto el estilo, como el grosor y el color del borde
+4. Margin o margen:
+	Es el espacio alrededor de la caja q esta fuera de el borde, este espacio
+	separa este elemento de otros elementos, a diferencia de los anteriores, no forma parte de la caja
+	
+Este apunte es hasta la hora 2.57 MODIFICAR
+
+HORA   

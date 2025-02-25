@@ -1,0 +1,18 @@
+/*
+border: 4px solid black; Esto es un shorthand, le pasamos primero el tamaño, despues el estilo y por ultimo el color
+border-radius: 8px;
+*/
+body {
+    background: black;
+}
+
+input { 
+    margin: 5px;
+    padding: 6px 9px;
+    border: none;
+    border-top: 1px solid greenyellow;
+    border-right: 1px solid greenyellow;
+    background: transparent;
+    color: greenyellow;
+    border-radius: 5px;
+}

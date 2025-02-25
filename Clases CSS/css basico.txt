@@ -166,6 +166,6 @@ Este modelo incluye 4 propiedades:
 	Es el espacio alrededor de la caja q esta fuera de el borde, este espacio
 	separa este elemento de otros elementos, a diferencia de los anteriores, no forma parte de la caja
 	
-Este apunte es hasta la hora 2.57 MODIFICAR
+Este apunte es hasta la hora 2.57 
 
-HORA   
+HORA 3.06

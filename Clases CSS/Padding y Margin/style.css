@@ -1,0 +1,20 @@
+.formulario {
+    background: blue;
+    padding: 30px; /* Este es un shorthand, define top, bottom, left y right en una sola linea, tmb se le pueden poner los 4 valores juntos y si se ponen dos valores se define el padding horizontal(top y bottom) y el padding vertical (left y right) */
+}
+
+.formulario_input {
+    padding: 9px 12px;
+    width: 95%;
+    background: black;
+    color: white;
+    margin: 10px;
+}
+
+
+.boton_enviar {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: lightblue;
+    width: 100%;
+}

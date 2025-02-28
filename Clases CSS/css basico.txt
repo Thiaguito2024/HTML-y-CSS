@@ -55,7 +55,8 @@ El rel="" (viene de relationship) le dice la relacion de el archivo vinculado co
 El href="" le dice de que archivo sacar las propiedades para los elementos
 
 Ya en el archivo en el que vamos a modificar las propiedades hay que poner un selector, es decir, seleccionar que propiedades vamos a modificar
-Despues se abren las llaves {}, que indican que estamos abriendo un bloque de declaraciones, se escribren las propiedades que vamos a modificar y el valor que le vamos a dar
+Despues se abren las llaves {}, que indican que estamos abriendo un bloque de declaraciones, se escribren las propiedades que vamos a modificar y 
+	el valor que le vamos a dar
 
 Esta forma de seleccionar elementos se llama seleccion por elementos, este metodo busca el nombre de el elememto html y lo modifica, en codigo:
 p {
@@ -166,6 +167,23 @@ Este modelo incluye 4 propiedades:
 	Es el espacio alrededor de la caja q esta fuera de el borde, este espacio
 	separa este elemento de otros elementos, a diferencia de los anteriores, no forma parte de la caja
 	
-Este apunte es hasta la hora 2.57 
+APUNTE HASTA LA HORA 2.57, COMPLETAR HASTA LOS COLORES  
 
-HORA 3.06
+COLORES:
+Hay varios metodos 
+
+RGB (Red, Green, Blue)
+Hay que definir cuanto rojo, verde o azul, del 0-255 para crear diferentes colores 
+
+RGBA (Red, Green, Blue, Alpha)
+Es lo mismo que el rgb pero ahora se define la opacidad, el 0, lo hace transparente y el 1  lo hace opaco
+
+Hexadecimal, se escribe asi #
+Hay que definir cuanto se va a usar de cada color, cada color tiene dos valores, el primero elige un tono y el segundo es para hacerlo mas especifico,
+	asi con todos
+Aunque si no es tan especifico, se pueden poner solamente 3 valores, uno para cada color
+
+Hexadecimal Alpha 
+Es lo mismo que el Hexadecimal, pero se le agrega un cuarto valor, del 0 al f que es la opacidad
+
+HORA 4. 16
